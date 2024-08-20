@@ -5,3 +5,10 @@ api-version: '1.13'
 author: WaterArchery
 depend:
   - LitLibs
+commands:
+  litsellchest:
+    default: true
+    description: This is the main command
+    aliases:
+      - sellchest
+      - lsc

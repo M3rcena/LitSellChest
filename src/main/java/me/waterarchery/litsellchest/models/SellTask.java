@@ -136,9 +136,10 @@ public class SellTask extends BukkitRunnable {
                             messageHandler.sendMessage(player, msg);
                         }
                     }
-                    if(hasInvalids && notifyOnUnsellable) {
+
+                    if(hasInvalids && notifyOnUnsellable && Bukkit.getOfflinePlayer(sellChest.getOwner()).isOnline()) {
                         String msg = configHandler.getMessageLang("InvalidPriceOrFree");
-                        messageHandler.sendMessage(player,msg);
+                        messageHandler.sendMessage(Bukkit.getOfflinePlayer(sellChest.getOwner()).getPlayer(),msg);
                     }
                 }
                 else {

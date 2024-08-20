@@ -45,7 +45,7 @@ public class CommandHandler {
     public void unRegisterCommands(BukkitCommandManager<CommandSender> manager) {
         if (manager != null) {
             manager.unregisterCommands(command);
-            Lists.newArrayList("islandnpc", "isnpc").forEach(this::unregisterCommand);
+            Lists.newArrayList("litsellchest", "sellchest", "lsc").forEach(this::unregisterCommand);
         }
     }
 

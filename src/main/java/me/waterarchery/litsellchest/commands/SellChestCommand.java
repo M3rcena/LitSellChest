@@ -75,6 +75,7 @@ public class SellChestCommand extends BaseCommand {
         ChestHandler chestHandler = ChestHandler.getInstance();
         ConfigHandler configHandler = ConfigHandler.getInstance();
 
+        GUIHandler.getInstance().initialize();
         chestHandler.loadChestTypes();
         chestHandler.startTask();
         configHandler.sendMessageLang(sender, "PluginReloaded");
