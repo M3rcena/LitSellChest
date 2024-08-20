@@ -1,0 +1,38 @@
+settings_options:
+  size: 27
+  name: '&8SellChest - Settings'
+  fillMenu:
+    enabled: true
+    fillItem: 'BLACK_STAINED_GLASS_PANE'
+  items:
+    chest_settings:
+      slot: 11
+      material: CHEST
+      name: '&bOpen Settings'
+      lore:
+        - ''
+        - '&7You can click here to'
+        - '&7open &byour Sell Chest Settings.'
+    chest_info:
+      slot: 13
+      material: CHEST
+      name: '&bYour Chest Info'
+      lore:
+        - ''
+        - '&b&lINFO'
+        - '&7You can place your items'
+        - '&7inside this chest to sell them.'
+        - ''
+        - '&b&lPROPERTIES'
+        - '&7Status: &b%status%'
+        - '&7Tax: &b%tax%%'
+        - '&7Sell Multiplier: &b%sellMultiplier%'
+        - '&7Interval: &b%sellInterval%s'
+    chest_upgrades:
+      slot: 15
+      material: ENDER_CHEST
+      name: '&bUpgrade Chest'
+      lore:
+        - ''
+        - '&7You can click here to'
+        - '&7open &byour Sell Chest Upgrades.'
